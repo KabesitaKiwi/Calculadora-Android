@@ -19,10 +19,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Conectamos la pantalla de resultado
         resultado = findViewById(R.id.resultado)
 
-        // 🔢 Configuramos los botones numéricos
         val botonesNumeros = listOf(
             R.id.num0, R.id.num1, R.id.num2, R.id.num3,
             R.id.num4, R.id.num5, R.id.num6, R.id.num7, R.id.num8, R.id.num9
@@ -36,7 +34,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // ➕ ➖ ✖️ ➗ Operaciones
+        findViewById<Button>(R.id.botonPunto).setOnClickListener {
+            calc.annadePunto()
+            resultado.text = calc.getContenido()
+        }
+
         findViewById<Button>(R.id.botonSumar).setOnClickListener {
             calc.opera('+')
         }
