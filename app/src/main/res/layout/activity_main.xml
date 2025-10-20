@@ -26,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="/"
+        android:textSize="24sp"
         app:iconSize="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num1"
@@ -95,6 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/num9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -124,15 +126,16 @@
 
     <Button
         android:id="@+id/botonSumar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="89dp"
+        android:layout_height="188dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/num3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/num3"
         app:layout_constraintEnd_toEndOf="@+id/botonRestar"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="@+id/botonRestar"
-        app:layout_constraintTop_toTopOf="@+id/num6"
-        app:layout_constraintVertical_bias="0.479" />
+        app:layout_constraintTop_toBottomOf="@+id/num9"
+        app:layout_constraintVertical_bias="0.357" />
 
     <Button
         android:id="@+id/num2"
@@ -163,6 +166,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/botonDividir"
         app:layout_constraintEnd_toEndOf="@+id/num2"
         app:layout_constraintStart_toStartOf="@+id/num2"
@@ -173,6 +177,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="*"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/num0"
         app:layout_constraintEnd_toEndOf="@+id/num3"
         app:layout_constraintStart_toStartOf="@+id/num3"
@@ -180,9 +185,10 @@
 
     <Button
         android:id="@+id/botonResultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="172dp"
         android:text="="
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/botonMultiplicar"
         app:layout_constraintEnd_toEndOf="@+id/botonRestar"
         app:layout_constraintStart_toStartOf="@+id/botonRestar"
